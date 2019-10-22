@@ -45,33 +45,33 @@
 	<key>DVTMarkupTextEmphasisColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTMarkupTextEmphasisFont</key>
-	<string>.SFNS-RegularItalic - 19.0</string>
+	<string>.SFNS-RegularItalic - 17.0</string>
 	<key>DVTMarkupTextInlineCodeColor</key>
 	<string>1 1 1 0.7</string>
 	<key>DVTMarkupTextLinkColor</key>
 	<string>0.33 0.247124 0.894195 1</string>
 	<key>DVTMarkupTextLinkFont</key>
-	<string>.SFNS-Regular - 19.0</string>
+	<string>.SFNS-Regular - 17.0</string>
 	<key>DVTMarkupTextNormalColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTMarkupTextNormalFont</key>
-	<string>.SFNS-Regular - 19.0</string>
+	<string>.SFNS-Regular - 17.0</string>
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>1 1 1 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.SFNS-Regular - 26.6</string>
+	<string>.SFNS-Regular - 23.8</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
-	<string>.SFNS-Regular - 45.6</string>
+	<string>.SFNS-Regular - 40.8</string>
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTMarkupTextSecondaryHeadingFont</key>
-	<string>.SFNS-Regular - 34.2</string>
+	<string>.SFNS-Regular - 30.6</string>
 	<key>DVTMarkupTextStrongColor</key>
 	<string>1 1 1 1</string>
 	<key>DVTMarkupTextStrongFont</key>
-	<string>.SFNS-Bold - 19.0</string>
+	<string>.SFNS-Bold - 17.0</string>
 	<key>DVTScrollbarMarkerAnalyzerColor</key>
 	<string>0.403922 0.372549 1 1</string>
 	<key>DVTScrollbarMarkerBreakpointColor</key>
@@ -166,7 +166,7 @@
 		<key>xcode.syntax.comment.doc</key>
 		<string>SFMono-Regular - 18.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>SFMono-Bold - 14.0</string>
+		<string>SFMono-Bold - 18.0</string>
 		<key>xcode.syntax.declaration.other</key>
 		<string>SFMono-Semibold - 18.0</string>
 		<key>xcode.syntax.declaration.type</key>
@@ -198,7 +198,7 @@
 		<key>xcode.syntax.keyword</key>
 		<string>SFMono-Bold - 18.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>SFMono-Bold - 14.0</string>
+		<string>SFMono-Bold - 18.0</string>
 		<key>xcode.syntax.markup.code</key>
 		<string>SFMono-Medium - 18.0</string>
 		<key>xcode.syntax.number</key>
