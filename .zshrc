@@ -20,10 +20,8 @@ alias set-anaconda='export PATH=~/opt/anaconda3/bin:$PATH'
 # SOURCE POWERLEVEL10K THEME
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# RUN NEOFETCH (TEMPORARILY FROM MASTER)
-# To avoid problems with other terminal apps that can't display images,
-# neofetch is only run when the terminal is iTerm2.
+# RUN NEOFETCH ONLY FOR iTerm
 if [ $TERM_PROGRAM = "iTerm.app" ]
 then
-    ~/neofetch-custom/neofetch/neofetch --iterm2 ~/neofetch-custom/koishi-sharo.jpg --size 25%
+    neofetch --iterm2 ~/{PATH-TO-SOME-IMAGE} --crop_mode fill
 fi
