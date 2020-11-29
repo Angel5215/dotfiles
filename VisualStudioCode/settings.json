@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "'Cascadia Code', 'Jetbrains Mono', 'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 20,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "window.autoDetectColorScheme": true,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    "workbench.preferredLightColorTheme": "Atom One Light"
+}
