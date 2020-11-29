@@ -73,3 +73,30 @@ xcode-select --install
     </td>
   </tr>
 </table>
+
+## Install Homebrew
+
+> The Missing Package Manager for macOS (or Linux)
+
+Homebrew is a package manager built for macOS. It allows us to install software not included in macOS using a command line interface. We will use it to install commands like `neofetch`, `fortune`, `cowsay` and some fonts to display icons.
+
+4. Install [Homebrew](https://brew.sh/).
+
+**This step will ask you to type your password inside the terminal**
+
+```zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Homebrew will show you a screen like this after typing your password.
+
+<p align="center">
+  <img src="img/07-homebrew-installation-prompt.png"/>
+</p>
+
+If everything installs correctly, you should see a success message like this:
+
+<p align="center">
+  <img src="img/08-homebrew-installation-success.png"/>
+</p>
+
