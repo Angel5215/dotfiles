@@ -80,7 +80,7 @@ xcode-select --install
 
 Homebrew is a package manager built for macOS. It allows us to install software not included in macOS using a command line interface. We will use it to install commands like `neofetch`, `fortune`, `cowsay` and some fonts to display icons.
 
-4. Install [Homebrew](https://brew.sh/).
+4. Install [Homebrew](https://brew.sh/) by running the following command on iTerm2.
 
 **This step will ask you to type your password inside the terminal**
 
@@ -98,5 +98,23 @@ If everything installs correctly, you should see a success message like this:
 
 <p align="center">
   <img src="img/08-homebrew-installation-success.png"/>
+</p>
+
+## Install Oh My Zsh
+
+>A delightful community-driven (with 1700+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community.
+
+Oh My Zsh is a framework for managing your [ZSH](https://en.wikipedia.org/wiki/Z_shell) configuration. From macOS Catalina and later, the default shell for the terminal is ZSH. We use this framework to customize the terminal in a simple and easy way using a configuration file. 
+
+5. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation) by running the following command on iTerm2:
+
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+After Oh My Zsh installs successfully, you should see the following in your terminal.
+
+<p align="center">
+  <img src="img/09-oh-my-zsh-success.png"/>
 </p>
 
