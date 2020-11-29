@@ -266,3 +266,62 @@ cp p10k.zsh ~/.p10k.zsh
   <img src="img/14-powerlevel10k-itself.png"/>
 </p>
 
+### After configuring Powerlevel10K
+
+Regardless of how you configured Powerlevel10K, you should now see a prompt like this after restarting iTerm2.
+
+<p align="center">
+  <img src="img/15-powerlevel10-configured.png"/>
+</p>
+
+## Configure `neofetch`
+
+16. Edit your `.zshrc` configuration file and append this to the end of the file. 
+  - Neofetch will only run when opening iTerm2 (this is because rendering images only works in iTerm2 and it might generate random text in other terminals).
+  - Change `{PATH-TO-SOME-IMAGE}` to the path of any image you want to display in your terminal including its extension. (e.g. `~/Downloads/my-awesome-image.png`)
+  - Read `neofetch` documentation for more information on [**crop mode**](https://github.com/dylanaraps/neofetch/wiki/What-is-Waifu-Crop%3F).
+
+```zsh
+# RUN NEOFETCH ONLY FOR iTerm
+if [ $TERM_PROGRAM = "iTerm.app" ]
+then
+    neofetch --iterm2 {PATH-TO-SOME-IMAGE} --crop_mode fill
+fi
+```
+17. Restart iTerm 2
+
+You should now see an image on your terminal every time you launch it!
+
+<p align="center">
+  <img src="img/01-final-result.png"/>
+</p>
+
+### Extra configurations for `neofetch`
+
+#### Display a custom ASCII logo
+
+ASCII can be rendered on any terminal, so you can delete the `if then fi` statement from the lines above and only leave the `neofetch` call.
+
+You just need to substitute `{PATH-TO-SOME-ASCII-LOGO}` with path to some ASCII text file that contains the logo you want to display (e.g. `~/Downloads/my-logo.txt`)
+
+```
+neofetch --ascii {PATH-TO-SOME-ASCII-LOGO}
+```
+
+<p align="center">
+  <img src="img/16-neofetch-ascii-redstar.png"/>
+</p>
+
+#### Display a custom ASCII with some quote
+
+You can combine the `fortune` and `cowsay` commands to display a custom ASCII with a quote. You may search in Google how to make a custom `.cow` file to use with cowsay or use some default *cows*. This is also available to use in other terminals beside iTerm2 as it just renders text.
+
+Substitute `{PATH-TO-COW-FILE}` with a path to a valid `.cow` file (e.g. `~/Downloads/bocchi.cow`)
+
+```zsh
+neofetch --ascii "$(fortune -n 60 | cowsay -W 60 -f {PATH-TO-COW-FILE})"
+```
+
+<p align="center">
+  <img src="img/17-neofetch-ascii-bocchi.png"/>
+</p>
