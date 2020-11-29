@@ -171,13 +171,27 @@ After the fonts are installed, you should be able to use them in any application
 brew install fortune cowsay
 ```
 
+## Enable fonts in iTerm2
+
+9. In your Menu Bar go to **iTerm**->**Preferences** (shortcut `⌘,`)
+
+10. Navigate to **Profiles** and select the **Text** tab.
+
+11. Select "Cascadia Code" or "Jetbrains Mono" as your font.
+
+12. Enable "Use a different font for non-ASCII text" and select "MesloLGS Nerd Font" (not the Mono version) as your font to display non-ASCII text (e.g. icons, symbols, etc.).
+
+<p align="center">
+  <img src="img/12-custom-fonts.png"/>
+</p>
+
 ## Install Powerlevel10K theme
 
 > Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
 
 Powerlevel10K is a ZSH theme compatible with Oh My Zsh. This theme allows us to customize our terminal with several colors, and sections by using a secondary configuration file `.p10k.zsh`. 
 
-9. Install Powerlevel10K by running the [following command](https://github.com/romkatv/powerlevel10k#oh-my-zsh) in iTerm2:
+13. Install Powerlevel10K by running the [following command](https://github.com/romkatv/powerlevel10k#oh-my-zsh) in iTerm2:
 
 ```zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -187,7 +201,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 Oh My Zsh provides us with a default [configuration file](https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template) that is copied to your home folder as a hidden file `~/.zshrc`. This configuration is loaded by your terminal when it starts and it is the place where we can configure themes, plugins, commands to run when the terminal starts, aliases and [many more settings](https://github.com/ohmyzsh/ohmyzsh#using-oh-my-zsh).
 
-10. Open your `.zshrc` using your favorite text editor (e.g. `nano`, `vim`, Sublime Text, Visual Studio Code).
+14. Open your `.zshrc` using your favorite text editor (e.g. `nano`, `vim`, Sublime Text, Visual Studio Code).
 
 ```zsh
 # In this case, I want to edit it with Visual Studio Code.
@@ -197,7 +211,7 @@ code ~/.zshrc
 When you open it, you should see this content:
 
 <p align="center">
-  <img src="img/12-zshrc-file.png"/>
+  <img src="img/13-zshrc-file.png"/>
 </p>
 
 Change its content to this:
@@ -221,3 +235,34 @@ source $ZSH/oh-my-zsh.sh
 # SOURCE POWERLEVEL10K THEME
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 ```
+
+## Configure Powerlevel10K
+
+This repository contains a customized version of the official Powerlevel10K configuration file (`.p10k.zsh`). You can either copy mine or allow Powerlevel10K to configure itself. 
+
+### Copy my configuration
+
+15a. Clone or download the `dotfiles` repository. 
+
+```zsh
+git clone https://github.com/Angel5215/dotfiles
+```
+
+15b. Copy my `.p10k.zsh` version to your home folder.
+
+```zsh
+# Navigate to your local copy of the `dotfiles` repository
+cd ~/{PATH-TO-DOTFILES}
+cp p10k.zsh ~/.p10k.zsh
+```
+
+15c. Close iTerm2 and reopen it. 
+
+### Allow Powerlevel10K to configure itself
+
+15. Close iTerm2 and reopen it. Powerlevel10K should prompt a command line interface to configure itself. Do not install Meslo Nerd Font as it is already installed.
+
+<p align="center">
+  <img src="img/14-powerlevel10k-itself.png"/>
+</p>
+
