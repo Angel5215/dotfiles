@@ -134,9 +134,29 @@ After installing, you can verify by running the `neofetch` command in your termi
   <img src="img/10-neofetch.png"/>
 </p>
 
+7. Install [Cascadia Code](https://github.com/microsoft/cascadia-code), [Meslo Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) and [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) using [Homebrew](https://github.com/Homebrew/homebrew-cask-fonts).
+
+- Cascadia Code and JetBrains Mono are monospaced fonts that look good for a terminal prompt. You can install either one of them but I like to install both. 
+
+- Nerd Fonts are modified fonts that contain patches to be able to display icons that are not usually included with them. In this case we will install the Meslo nerd fonts which are the most compatible fonts with Powerlevel10K (a theme we will be using for Oh My Zsh).
+
+```zsh
+# You only need to do run this line once. If you install fonts later, you don't need to run it again.
+brew tap homebrew/cask-fonts   
+
+# These fonts can be searched from Homebrew by using `brew search` as shown in the image below.
+brew cask install font-cascadia-code font-jetbrains-mono font-meslo-lg-nerd-font
+```
+
+<p align="center">
+  <img src="img/11-fonts.png"/>
+</p>
+
+After the fonts are installed, you should be able to use them in any application.
+
 ### Extras
 
-These commands are not necessary, but they are included because you might want to display a different ASCII art in your terminal instead of an image. 
+**These commands are not necessary**, but they are included here because you might want to display a different ASCII art in your terminal instead of an image. 
 
 - Fortune
 
@@ -146,6 +166,58 @@ These commands are not necessary, but they are included because you might want t
 
 > `cowsay` is a program that generates ASCII pictures of a cow with a message. It can also generate pictures using pre-made images of other animals, such as Tux the Penguin, the Linux mascot.—https://en.wikipedia.org/wiki/Cowsay
 
+8. Install `fortune` and `cowsay` using Homebrew.
 ```zsh
 brew install fortune cowsay
+```
+
+## Install Powerlevel10K theme
+
+> Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
+
+Powerlevel10K is a ZSH theme compatible with Oh My Zsh. This theme allows us to customize our terminal with several colors, and sections by using a secondary configuration file `.p10k.zsh`. 
+
+9. Install Powerlevel10K by running the [following command](https://github.com/romkatv/powerlevel10k#oh-my-zsh) in iTerm2:
+
+```zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+## ZSH configuration file
+
+Oh My Zsh provides us with a default [configuration file](https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template) that is copied to your home folder as a hidden file `~/.zshrc`. This configuration is loaded by your terminal when it starts and it is the place where we can configure themes, plugins, commands to run when the terminal starts, aliases and [many more settings](https://github.com/ohmyzsh/ohmyzsh#using-oh-my-zsh).
+
+10. Open your `.zshrc` using your favorite text editor (e.g. `nano`, `vim`, Sublime Text, Visual Studio Code).
+
+```zsh
+# In this case, I want to edit it with Visual Studio Code.
+code ~/.zshrc
+```
+
+When you open it, you should see this content:
+
+<p align="center">
+  <img src="img/12-zshrc-file.png"/>
+</p>
+
+Change its content to this:
+
+```zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# OH-MY-ZSH THEME
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# PLUGINS
+plugins=(git)
+
+# SOURCE OH-MY-ZSH main configuration.
+source $ZSH/oh-my-zsh.sh
+
+# SOURCE POWERLEVEL10K THEME
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 ```
