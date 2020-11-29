@@ -118,3 +118,34 @@ After Oh My Zsh installs successfully, you should see the following in your term
   <img src="img/09-oh-my-zsh-success.png"/>
 </p>
 
+## Install commands and fonts
+
+> Neofetch is a command-line system information tool written in bash 3.2+. Neofetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.–https://github.com/dylanaraps/neofetch
+
+6. Install `neofetch` using [Homebrew](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
+
+```zsh
+brew install neofetch
+```
+
+After installing, you can verify by running the `neofetch` command in your terminal. You should a screen similar to this:
+
+<p align="center">
+  <img src="img/10-neofetch.png"/>
+</p>
+
+### Extras
+
+These commands are not necessary, but they are included because you might want to display a different ASCII art in your terminal instead of an image. 
+
+- Fortune
+
+> `fortune` is a program that displays a pseudorandom message from a database of quotations.—https://en.wikipedia.org/wiki/Fortune_(Unix)
+
+- Cowsay
+
+> `cowsay` is a program that generates ASCII pictures of a cow with a message. It can also generate pictures using pre-made images of other animals, such as Tux the Penguin, the Linux mascot.—https://en.wikipedia.org/wiki/Cowsay
+
+```zsh
+brew install fortune cowsay
+```
