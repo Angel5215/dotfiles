@@ -145,7 +145,7 @@ After installing, you can verify by running the `neofetch` command in your termi
 brew tap homebrew/cask-fonts   
 
 # These fonts can be searched from Homebrew by using `brew search` as shown in the image below.
-brew cask install font-cascadia-code font-jetbrains-mono font-meslo-lg-nerd-font
+brew install --cask font-cascadia-code font-jetbrains-mono font-meslo-lg-nerd-font
 ```
 
 <p align="center">
