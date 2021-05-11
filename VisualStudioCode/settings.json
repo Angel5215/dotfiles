@@ -4,9 +4,9 @@
     "editor.fontSize": 20,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.wordWrap": "on",
-    "window.autoDetectColorScheme": true,
     "window.zoomLevel": 1,
     "workbench.colorTheme": "One Dark Pro",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
-    "workbench.preferredLightColorTheme": "Atom One Light"
+    "workbench.preferredLightColorTheme": "Github Light Theme - Gray",
+    "window.autoDetectColorScheme": true
 }
