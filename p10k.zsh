@@ -39,6 +39,7 @@
     swift_version           # current version of the Swift language installed
     node_version            # current version of node.js being used
     anaconda                # name of conda environment
+    virtualenv              # name of python environment from venv
     # =========================[ Line #2 ]=========================
     newline                 # \n
     prompt_char             # prompt symbol
