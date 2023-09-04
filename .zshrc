@@ -14,14 +14,12 @@ plugins=(git nvm)
 source $ZSH/oh-my-zsh.sh
 
 # ALIASES
+# alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias zshconfig="code ~/.zshrc"
-alias set-anaconda='export PATH=~/opt/anaconda3/bin:$PATH'
+
+# ENVIRONMENT VARIABLES
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # SOURCE POWERLEVEL10K THEME
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-# RUN NEOFETCH ONLY FOR iTerm
-if [ $TERM_PROGRAM = "iTerm.app" ]
-then
-    neofetch --iterm2 ~/{PATH-TO-SOME-IMAGE} --crop_mode fill
-fi
