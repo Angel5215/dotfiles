@@ -14,12 +14,20 @@ plugins=(git nvm)
 source $ZSH/oh-my-zsh.sh
 
 # ALIASES
-# alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias zshconfig="code ~/.zshrc"
 
-# ENVIRONMENT VARIABLES
+# ANDROID STUDIO
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# FLUTTER
+export FVM_HOME=$HOME/fvm
+export PATH=$FVM_HOME/default/bin:$PATH
+export CHROME_EXECUTABLE='/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'
+
+# DOTNET
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+export DOTNET_CLI_TELEMETRY_OPTOUT="1"
 
 # SOURCE POWERLEVEL10K THEME
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
