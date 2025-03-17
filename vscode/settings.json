@@ -1,14 +1,14 @@
 {
-    "editor.fontFamily": "'Cartograph CF', 'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Geist Mono', 'SF Mono', 'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.wordWrap": "on",
     "editor.accessibilitySupport": "off",
     "window.autoDetectColorScheme": true,
-    "workbench.iconTheme": "catppuccin-latte",
-    "workbench.colorTheme": "Catppuccin Latte",
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "terminal.integrated.fontFamily": "'MesloLGS Nerd Font Mono'"
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "terminal.integrated.fontFamily": "'MesloLGS Nerd Font Mono'",
+    "window.zoomLevel": 2
 }
