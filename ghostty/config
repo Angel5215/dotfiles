@@ -1,0 +1,13 @@
+background-blur = true
+background-opacity = 0.95
+copy-on-select = clipboard
+cursor-style = block
+font-codepoint-map = U+E000-U+FFFF=MesloLGS Nerd Font Mono
+font-family = "SF Mono"
+font-size = 28
+macos-titlebar-style = tabs
+shell-integration-features = no-cursor
+theme = dark:xcodedarkhc,light:xcodelighthc
+window-width = 100
+window-height = 30
+window-padding-balance = true
