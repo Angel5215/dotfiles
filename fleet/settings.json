@@ -1,0 +1,14 @@
+{
+    "editor.fontFamily": "Geist Mono",
+    "editor.fontSize": 22.0,
+    "editor.ligatures": false,
+    "editor.lineSpacing": 1.2,
+    "editor.softWrapEnabled": true,
+    "editor.renderWhitespace": "All",
+    "terminal.clearTerminalOnCmdK": true,
+    "terminal.fontFamily": "MesloLGS Nerd Font Mono",
+    "terminal.fontSize": 18.0,
+    "terminal.lineSpacing": 1.2,
+    "theme": "sync-with-os",
+    "zoomLevel": 1.2
+}
