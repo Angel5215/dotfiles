@@ -36,10 +36,8 @@
     context                 # user and hostname
     dir                     # current directory
     vcs                     # git status
-    swift_version           # current version of the Swift language installed
     node_version            # current version of node.js being used
     anaconda                # name of conda environment
-    virtualenv              # name of python environment from venv
     # =========================[ Line #2 ]=========================
     newline                 # \n
     prompt_char             # prompt symbol
@@ -54,8 +52,8 @@
     status                    # exit code of the last command
     command_execution_time    # duration of the last command
     background_jobs           # presence of background jobs
-    ip                        # ip address and bandwidth usage for a specified network interface
-    time                      # current time
+    # ip                      # ip address and bandwidth usage for a specified network interface
+    # time                    # current time
     # background_jobs         # presence of background jobs
     # direnv                  # direnv status (https://direnv.net/)
     # asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
