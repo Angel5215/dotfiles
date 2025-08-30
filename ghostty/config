@@ -5,9 +5,10 @@ cursor-style = block
 font-codepoint-map = U+E000-U+FFFF=MesloLGS Nerd Font Mono
 font-family = SF Mono
 font-size = 24
-macos-titlebar-style = tabs
 shell-integration-features = no-cursor
 theme = xcodedarkhc
-window-width = 120
 window-height = 30
+window-inherit-font-size = true
+window-inherit-working-directory = false
+window-width = 120
 window-padding-balance = true
