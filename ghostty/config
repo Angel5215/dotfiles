@@ -3,7 +3,8 @@ background-opacity = 0.95
 copy-on-select = clipboard
 cursor-style = block
 font-codepoint-map = U+E000-U+FFFF=MesloLGS Nerd Font Mono
-font-family = SF Mono
+font-family = Geist Mono
+font-feature = -calt, -liga, -dlig
 font-size = 24
 shell-integration-features = no-cursor
 theme = xcodedarkhc
