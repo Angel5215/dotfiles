@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Geist Mono', 'SF Mono', 'Cartograph CF', 'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Input Mono', 'Geist Mono', 'SF Mono', 'Cartograph CF', 'JetBrains Mono', 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": false,
     "editor.fontSize": 22,
     "editor.multiCursorModifier": "ctrlCmd",
