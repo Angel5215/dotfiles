@@ -1,8 +1,8 @@
 {
-    "editor.fontFamily": "Geist Mono",
-    "editor.fontSize": 22.0,
+    "editor.fontFamily": "Input Mono",
+    "editor.fontSize": 20.0,
     "editor.ligatures": false,
-    "editor.lineSpacing": 1.2,
+    "editor.lineSpacing": 1,
     "editor.softWrapEnabled": true,
     "editor.renderWhitespace": "All",
     "terminal.fontFamily": "MesloLGS Nerd Font Mono",
