@@ -1,13 +1,12 @@
 background-blur = true
-background-opacity = 0.95
+background-opacity = 0.9
 copy-on-select = clipboard
 cursor-style = block
-font-codepoint-map = U+E000-U+FFFF=MesloLGS Nerd Font Mono
-font-family = Geist Mono
+font-family = GeistMono NFM
 font-feature = -calt, -liga, -dlig
 font-size = 24
 shell-integration-features = no-cursor
-theme = xcodedarkhc
+theme = Xcode Dark hc
 window-height = 30
 window-inherit-font-size = true
 window-inherit-working-directory = false
